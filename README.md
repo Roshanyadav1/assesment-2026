@@ -1,16 +1,51 @@
-# React + Vite
+# StudioShop — Professional E-Commerce UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalist, high-performance product gallery built with **React 18**, **Redux Toolkit**, and **Tailwind CSS**. This project focuses on "slick" micro-interactions, robust state management, and an architectural aesthetic.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+## 🚀 Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Slick UI/UX:** Minimalist "Ghost" design system with zero-animation focus states and backdrop-blur navigation.
+- **Robust State Management:** Centralized filtering logic (Search, Category, Sort) using Redux Toolkit Matchers and unified actions.
+- **Performance Optimized:** - **Lazy Loading:** Route-based code splitting with React Suspense.
+  - **Shimmer Loading:** Custom skeleton components to prevent layout shift.
+  - **Debounced Search:** High-accuracy search filtering to minimize Redux updates.
+- **Responsive Architecture:** Adaptive Sidebar-to-Accordion filter panels for mobile and desktop consistency.
+- **Scroll Restoration:** Intelligent browser history management for a seamless navigation experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+| Tool | Purpose |
+| :--- | :--- |
+| **React 18** | UI Library (Functional Components & Hooks) |
+| **Redux Toolkit** | Centralized Global State & Async Logic |
+| **Tailwind CSS** | Atomic CSS Framework for Slick Styling |
+| **React Router 6** | Modern Data-Browser Routing |
+| **FakeStore API** | REST API for Product Data |
+
+---
+
+## 📂 Architecture & Naming Conventions
+
+This project follows **Robust Naming Conventions** to ensure the codebase remains maintainable and clean:
+
+- **Items/Collection:** We use generic "Item" terminology in Redux for reusability.
+- **Unified Filters:** All UI changes (Search, Sort, Category) flow through a single `updateFilters` action.
+- **Status Enums:** Using `idle | loading | error` instead of simple booleans for better UI feedback.
+
+
+
+---
+
+## ⚡ Getting Started
+
+### 1. Clone & Install
+```bash
+git clone [https://github.com/yourusername/assesment-2026.git](https://github.com/yourusername/assesment-2026.git)
+cd assesment-2026
+npm install
+npm run dev
+ 
